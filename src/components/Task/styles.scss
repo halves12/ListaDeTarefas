@@ -1,0 +1,109 @@
+.task {
+    background: var(--gray-500);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--gray-400);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.task + .task {
+    margin-top: 1rem;
+}
+
+.taskUnchecked {
+    border-color: var(--gray-400);
+}
+
+.taskChecked {
+    border-color: var(--gray-500);
+}
+
+.textUnchecked {
+    font-size: 0.875rem;
+    color: var(--gray-100);
+}
+
+.textChecked {
+    font-size: 0.875rem;
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.checkbox {
+    width: 1.25rem;
+    height: 1.25rem;
+    background: none;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.deleteButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    svg path {
+        transition: 0.3s;
+    }
+    
+    &:hover svg path {
+        fill: var(--red)
+    }
+}
+
+.radioUnchecked {
+    background: none;
+
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+
+    position: relative;
+
+    &::before {
+        content: '';
+        background: var(--blue-dark);
+        opacity: 0.2;
+        display: none;
+        position: absolute;
+        width: 0.90rem;
+        height: 0.90rem;
+        border-radius: 50%;
+    }
+
+    &:hover {
+        background: var(--blue-dark);
+    }
+
+    &:hover::before {
+        display: block;
+    }
+}
+
+.radioChecked {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+
+    background: var(--purple-dark);
+    display: flex;
+    justify-content: center;
+
+    &:hover{
+        background: var(--purple);
+    }
+
+    img {
+        width: 0.875rem;
+    }
+}
