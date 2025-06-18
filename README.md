@@ -1,12 +1,37 @@
-# React + Vite
+# ListaDeTarefas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
+Aplicação web construída com React e Vite para gerenciar uma lista de tarefas (to-do list).  
+Permite adicionar, marcar como concluídas e remover tarefas de forma dinâmica e reativa.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
+- React 19
+- Vite (ferramenta de build e desenvolvimento rápido)
+- Sass para estilização modular e mais produtiva
+- Phosphor Icons para ícones modernos e personalizáveis
+- ESLint com plugins para manter a qualidade do código
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
+- Adicionar novas tarefas com interação rápida
+- Marcar tarefas como concluídas
+- Excluir tarefas
+- Interface limpa e responsiva
 
-## Expanding the ESLint configuration
+## Como Rodar o Projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/halves12/ListaDeTarefas.git
+Instale as dependências:
+
+bash
+Copiar
+Editar
+npm install
+Inicie o servidor de desenvolvimento:
+
+bash
+Copiar
+Editar
+npm run dev
